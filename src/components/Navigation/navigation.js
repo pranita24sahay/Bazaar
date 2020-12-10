@@ -1,24 +1,30 @@
 import React from 'react';
+import NavbarHeader from 'react-bootstrap/lib/NavbarHeader';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem} from 'reactstrap';
-import Logo from '../Images/Logo.png'
+import Logo from '../Images/Logo.png';
+import './Navigation.css';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfo , faAddressCard,  faHome } from "@fortawesome/free-solid-svg-icons";
+
 
 function NavigationBar() 
 {
     return (
-        <Navbar className="dark expand navbar navbar-expand-sm bg-dark">
-            <NavbarBrand className="mr-auto" href="/"><img src={Logo} height="40" width="41" alt='Bazaar' /></NavbarBrand>
-                <Nav >
+        <Navbar className= "navbar-expand-sm bg-custom">
+            <NavbarBrand className="mr-auto" href="/">Bazaar It</NavbarBrand>
+            <Nav >
                 <NavItem>
-                    <a href="#"><span className="fa fa-home fa-lg"></span> Home</a>
+                    <a href="#"><FontAwesomeIcon icon={faHome} />Home</a>
                 </NavItem>
                 <NavItem>
-                    <a href="#"><span className="fa fa-info fa-lg"></span> About Us </a>
+                    <a href="#"><FontAwesomeIcon icon={faInfo} /> About Us </a>
                 </NavItem>
                 <NavItem>
-                    <a href="#"><span className="fa fa-address-card fa-lg"></span> Contact Us </a>
+                    <a href="#"><FontAwesomeIcon icon={faAddressCard} /> Contact Us </a>
                 </NavItem>
-                </Nav>
-    </Navbar>
+            </Nav>
+        </Navbar>
     );    
 }
 export default NavigationBar;

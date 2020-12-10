@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App
+{
+  text-align: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-body 
+{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container 
+{
+  height: 300px;
+  width: 100%;
+  overflow: hidden; /* hide overflow or all photos will show */
+  position: relative; /* set to relative so its children, the images, can be absolute */
+}
+
+.App .image 
+{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: contain;
+  transition: left .3s; /* transition lets photos slide over smoothly */
+  border-radius: 15px 15px;
+}
+
+.button 
+{
+  cursor: pointer;
+  color: RGBA(235, 203, 175, 1.00);
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: .4s;
+}
+
+.button:hover 
+{
+  color: RGBA(180, 39, 12, 1.00);
+  background-color: RGBA(235, 203, 175, 1.00);
+}
