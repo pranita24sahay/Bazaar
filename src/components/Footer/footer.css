@@ -1,0 +1,23 @@
+. a {
+    margin-right: 10px;/*space to the right of the blue*/ 
+    padding-right: 10px;/*between the red and blue outlines*/
+    outline: 1px solid blue;
+ 
+    display: inline;
+    text-align: center;
+    top: 363px;
+    vertical-align: middle;
+    z-index: 1000;
+    height: 36px;
+    width: 36px;
+    text-decoration: none;
+       
+    /* you can add any of these */
+    /*
+    */
+  }
+  .icons i {
+    padding-right: 10px;/*space before the red outline*/
+    margin-right: 10px;/*also between the red and blue*/
+    outline: 1px solid red;
+  }
