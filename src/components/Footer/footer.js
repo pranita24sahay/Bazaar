@@ -22,6 +22,14 @@ function Footer() {
                     <p>© Copyright 2020 Sahay Corporates</p>
                 </div>
             </div>
+            <div className="row justify-content-center">
+                <div className ="col-auto">
+                    About Us
+                </div>
+                <div className ="col-auto">
+                    Contact Us
+                </div>
+            </div>
         </div>
     </div>
     )

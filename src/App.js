@@ -5,11 +5,11 @@ import SideBar from './components/Navigation/sidebar/sidebar.js';
 import BackDrop from './components/Navigation/Backdrop/Backdrop.js';
 import Header from './components/Header/header';
 import Caraousel from './components/Carousel/caraousel'
-import Home from './components/Home/home';
+import Home from './components/Collections/collections';
 import Footer from './components/Footer/footer';
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import image1 from './components/Images/watches.jpeg'
 
   class App extends Component {
 
@@ -47,6 +47,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
       <BrowserRouter>
       <br /><br /><br />
       <Caraousel /> 
+      <br /><br /><br />
       <div className="container">
       <div className="row"><Home/></div>
       </div>     

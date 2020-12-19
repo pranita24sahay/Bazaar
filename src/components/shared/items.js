@@ -1,6 +1,6 @@
  import image1 from '../Images/Clothes.webp';
  import image2 from '../Images/Shoes.webp';
- import image3 from '../Images/jewellery.webp';
+ import image3 from '../Images/jewellery-2.jpg';
  import image4 from '../Images/plant.webp';
  const ITEMS=
     [
@@ -9,7 +9,7 @@
         name:'Clothes',
         image: image1,
         category: 'clothes',
-        label:'Hot',
+        label:'',
         price:'4.99',
         featured: true,
         description:'The apparel we have'                    

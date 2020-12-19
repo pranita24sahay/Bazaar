@@ -1,9 +1,8 @@
 import React from 'react';
 import SideBarButton from '../sidebar/sidebarbutton';
 import './Toolbar.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfo , faAddressCard,  faHome } from "@fortawesome/free-solid-svg-icons";
 import Logo from '../../Images/Logo_transparent.png';
+import { Button } from 'react-bootstrap';
 
 
 
@@ -19,9 +18,7 @@ function Toolbar(prop) {
                 <div className="spacer" />
                 <div className="toolbar_navigation_items">
                     <ul>
-                        <li><a><FontAwesomeIcon icon={faHome} /> Home</a></li>
-                        <li><a><FontAwesomeIcon icon={faInfo} /> About Us</a></li>
-                        <li><a><FontAwesomeIcon icon={faAddressCard} />Contact Us</a></li>
+                        <li><Button>Login</Button></li>
                     </ul>
                     <br />
                 </div>
