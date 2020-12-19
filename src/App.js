@@ -4,8 +4,10 @@ import Toolbar from './components/Navigation/Toolbar/Toolbar';
 import SideBar from './components/Navigation/sidebar/sidebar.js';
 import BackDrop from './components/Navigation/Backdrop/Backdrop.js';
 import Header from './components/Header/header';
-import Carousel from './components/Carousel/Carousel'  
+import Caraousel from './components/Carousel/caraousel'
+import Home from './components/Home/home';
 import Footer from './components/Footer/footer';
+import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -14,7 +16,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
     state = {
       sidebarOpen:false
     };
-
     sidebarToggleClickHandler = () => {
       this.setState((prevState) => {
         return {sidebarOpen: !prevState.sidebarOpen}
@@ -43,8 +44,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
         {sidebar}
         {backdrop}
       </div>
-      <Header />
-      <Carousel />
+      <BrowserRouter>
+      <br /><br /><br />
+      <Caraousel /> 
+      <div className="container">
+      <div className="row"><Home/></div>
+      </div>     
+      </BrowserRouter>
       <Footer />
       </div>
     );

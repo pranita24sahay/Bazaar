@@ -3,7 +3,7 @@ import SideBarButton from '../sidebar/sidebarbutton';
 import './Toolbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfo , faAddressCard,  faHome } from "@fortawesome/free-solid-svg-icons";
-import Logo from '../../Images/logo2.jpg';
+import Logo from '../../Images/Logo_transparent.png';
 
 
 
