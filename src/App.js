@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
+
 import Toolbar from './components/Navigation/Toolbar/Toolbar';
 import SideBar from './components/Navigation/sidebar/sidebar.js';
-import BackDrop from './components/Navigation/Backdrop/Backdrop.js';
-import Header from './components/Header/header';
-import Caraousel from './components/Carousel/caraousel'
-import Home from './components/Collections/collections';
+import BackDrop from './components/Navigation/Backdrop/Backdrop.js'
+
+import Body from './components/Body/body';
+
 import Footer from './components/Footer/footer';
-import { BrowserRouter } from 'react-router-dom';
+
+import { BrowserRouter} from 'react-router-dom';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import image1 from './components/Images/watches.jpeg'
 
   class App extends Component {
 
@@ -39,20 +41,17 @@ import image1 from './components/Images/watches.jpeg'
       }
     return (
       <div>
-      <div style={{height:'100%'}}>
-      <Toolbar  sidebarClickHandler ={this.sidebarToggleClickHandler}/>
-        {sidebar}
-        {backdrop}
-      </div>
-      <BrowserRouter>
-      <br /><br /><br />
-      <Caraousel /> 
-      <br /><br /><br />
-      <div className="container">
-      <div className="row"><Home/></div>
-      </div>     
-      </BrowserRouter>
-      <Footer />
+        <BrowserRouter>
+          <div style={{height:'100%'}}>
+            <Toolbar  sidebarClickHandler ={this.sidebarToggleClickHandler}/>
+              {sidebar}
+              {backdrop}
+          </div>
+          <br /><br /><br />
+          <Body /> 
+          <br /><br /><br />
+          <Footer />     
+        </BrowserRouter>
       </div>
     );
     }

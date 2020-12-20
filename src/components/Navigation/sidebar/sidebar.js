@@ -1,10 +1,11 @@
 import React from 'react';
 import './sidebar.css';
+import { Link } from 'react-router-dom';
 
 const SideBar = props => (
     <nav className="side-drawer">
         <ul>
-            <li><a href="/">Clothes</a></li>
+            <Link to='/clothes'><li>Clothes</li></Link>
             <li><a href="/">Footwear</a></li>
             <li><a href="/">Jewellery</a></li>
             <li><a href="/">Furniture</a></li>
