@@ -1,0 +1,18 @@
+.style
+{
+    border: black;
+    border-radius: 20px;
+    background-color: aliceblue;    
+}
+.CardBody
+{
+    justify-content: center;
+}
+.style-pic
+{
+    border-color: black;
+}
+.caro-pic
+{
+    max-height: 450px;
+}
