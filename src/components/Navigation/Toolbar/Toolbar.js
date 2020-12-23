@@ -2,14 +2,13 @@ import React from 'react';
 import SideBarButton from '../sidebar/sidebarbutton';
 import './Toolbar.css';
 import Logo from '../../Images/Logo_transparent.png';
-import { Button } from 'react-bootstrap';
-
+import {Button } from 'reactstrap';
+import Login from '../Login'
 
 
 function Toolbar(prop) {
     return (
         <header className="toolbar">
-
             <nav className="toolbar_navigation ">
                 <div className="button1">
                     <SideBarButton click={prop.sidebarClickHandler} />
@@ -18,12 +17,11 @@ function Toolbar(prop) {
                 <div className="spacer" />
                 <div className="toolbar_navigation_items">
                     <ul>
-                        <li><Button>Login</Button></li>
+                        <li><Login /></li>
                     </ul>
                     <br />
                 </div>
             </nav>
-
         </header>
     );
 }

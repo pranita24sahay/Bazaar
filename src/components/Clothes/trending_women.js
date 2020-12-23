@@ -3,10 +3,10 @@ import { Card, CardBody, CardHeader, CardImg, CardSubtitle, CardText} from 'reac
 import CLOTHING_ITEMS from './Clothes_arr';
 
 
-function top_picks() {
+function trending_women() {
     const PICKS = CLOTHING_ITEMS.map(cloth =>
         {
-            if(cloth.top)
+            if(cloth.women)
             {
                 return(
                 <div  className="col-sm-3">
@@ -29,4 +29,4 @@ function top_picks() {
     );
 }
 
-export default top_picks;
+export default trending_women;
