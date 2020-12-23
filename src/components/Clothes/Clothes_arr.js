@@ -28,14 +28,14 @@ import saree from './Images/saree.jpg'
     [
         {
         id: 0,
-        name:'Shirt',
-        image: shirt1,
-        category: 'men',
-        label:'',
-        price:'Rs. 950',
-        featured: false,
-        men: true,
-        description:'A great casual shirt for office parties to romantic dates'                    
+        name:'Overcoat',
+        image: overcoat,
+        category: 'Ladies',
+        label:'Trending',
+        price:'Rs. 1550',
+        featured: true,
+        women:false,
+        description:'A black overcoat to make the winter a bit trendy'                
         },
         {
         id: 1,
@@ -71,14 +71,15 @@ import saree from './Images/saree.jpg'
         },
         {
             id: 4,
-            name:'Overcoat',
-            image: overcoat,
-            category: 'Ladies',
-            label:'Trending',
-            price:'Rs. 1550',
-            featured: true,
-            women:false,
-            description:'A black overcoat to make the winter a bit trendy'                    
+            name:'Shirt',
+            image: shirt1,
+            category: 'men',
+            label:'',
+            price:'Rs. 950',
+            featured: false,
+            men: true,
+            description:'A great casual shirt for office parties to romantic dates'
+                                
         },
         {
             id: 5,

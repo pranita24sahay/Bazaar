@@ -6,11 +6,8 @@ const SideBar = props => (
     <nav className="side-drawer">
         <ul>
             <Link to='/clothes'><li>Clothes</li></Link>
-            <li><a href="/">Footwear</a></li>
-            <li><a href="/">Jewellery</a></li>
-            <li><a href="/">Furniture</a></li>
-            <li><a href="/">Electronics</a></li>
-            <li><a href="/">Photos</a></li>
+            <Link to='/footwear'><li>Footwear</li></Link>
+            <Link to='/jewellery'><li>Jewellery</li></Link>
         </ul>
     </nav>
 );

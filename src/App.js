@@ -49,7 +49,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
           </div>
           <br /><br /><br />
           <Body /> 
-          
           <br /><br /><br />
           <Footer />     
         </BrowserRouter>

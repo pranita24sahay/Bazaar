@@ -3,7 +3,14 @@ import React, { Component } from 'react';
 import Caraousel from '../Carousel/caraousel';
 import Collections from '../Collections/collections';
 
-import Clothes from '../Clothes/clothes';
+import Slider from './carousel';
+import Trending_for_men from './trending_men';
+import Trending_for_women from './trending_women';
+
+import Clothes_arr from '../Clothes/Clothes_arr';
+import Footwear_arr from '../Footwear/Footwear_arr';
+
+import './body.css';
 
 import { Switch, Route, Redirect,withRouter  } from 'react-router-dom';
 
@@ -26,9 +33,27 @@ class Body extends Component {
     {
         return(
             <div>
-                <Clothes />
+                <Slider arr={Clothes_arr} />
+                <Trending_for_men arr ={Clothes_arr} />
+                <Trending_for_women arr ={Clothes_arr} />
             </div>
         )
+    }
+    const FootwearPage = () =>
+    {
+      return(
+        <div>
+            <Slider arr ={Footwear_arr} />
+        </div>
+      )
+    }
+    const JewelleryPage = () =>
+    {
+      return(
+        <div>
+
+        </div>
+      )
     }
 
     return (
@@ -36,6 +61,8 @@ class Body extends Component {
           <Switch>
               <Route path='/home' component={HomePage} />
               <Route exact path='/clothes' component={Clothespage} />
+              <Route exact path='/footwear' component={FootwearPage} />
+              <Route exact path='/jewellery' component={JewelleryPage} />
               <Redirect to="/home" />
           </Switch>
         </div>

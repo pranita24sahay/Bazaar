@@ -1,12 +1,11 @@
 import React from 'react';
 import { Card, CardBody, CardHeader, CardImg, CardSubtitle, CardText} from 'reactstrap';
-import CLOTHING_ITEMS from './Clothes_arr';
 
 
-function trending_men() {
-    const PICKS = CLOTHING_ITEMS.map(cloth =>
+function trending_women(props) {
+    const PICKS = props.arr.map(cloth =>
         {
-            if(cloth.men)
+            if(cloth.women)
             {
                 return(
                 <div  className="col-sm-3">
@@ -23,10 +22,15 @@ function trending_men() {
             }
         })
     return (
-        <div>
+        <div className="container">
+            <div className="row justify-content-center">
+                Trending in women
+            </div>
+            <div className="row">
             {PICKS}
+            </div>
         </div>
     );
 }
 
-export default trending_men;
+export default trending_women;
