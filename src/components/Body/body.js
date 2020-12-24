@@ -44,14 +44,22 @@ class Body extends Component {
       return(
         <div>
             <Slider arr ={Footwear_arr} />
+            <Trending_for_men arr ={Footwear_arr} />
+            <Trending_for_women arr ={Footwear_arr} />
         </div>
       )
     }
     const JewelleryPage = () =>
     {
       return(
-        <div>
-
+        <div className="row justify-content-center">
+          <br />
+          <br />
+          <br />
+            <h1>
+              Coming soon ...
+            </h1>
+            <br />
         </div>
       )
     }

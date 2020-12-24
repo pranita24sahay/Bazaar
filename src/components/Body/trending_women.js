@@ -23,9 +23,11 @@ function trending_women(props) {
         })
     return (
         <div className="container">
+            <br />
             <div className="row justify-content-center">
-                Trending in women
+               <h1> Trending in women  </h1>
             </div>
+            <br />
             <div className="row">
             {PICKS}
             </div>
