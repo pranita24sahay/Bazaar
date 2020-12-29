@@ -6,6 +6,9 @@ import Slider from './carousel';
 import Trending_for_men from './trending_men';
 import Trending_for_women from './trending_women';
 
+import ClothingProd from '../Clothes/clothesprod';
+import FootwearProd from '../Footwear/footwearprod'
+
 import Clothes_arr from '../Clothes/Clothes_arr';
 import Footwear_arr from '../Footwear/Footwear_arr';
 import ITEMS from '../Home/items';
@@ -37,6 +40,7 @@ class Body extends Component {
                 <Trending_for_men arr ={Clothes_arr} />
                 <Trending_for_women arr ={Clothes_arr} />
                 <BrowseALL arr={Clothes_arr}/>
+                <ClothingProd />
             </div>
         )
     }
@@ -48,6 +52,7 @@ class Body extends Component {
             <Trending_for_men arr ={Footwear_arr} />
             <Trending_for_women arr ={Footwear_arr} />
             <BrowseALL arr={Footwear_arr}/>
+            <FootwearProd />
         </div>
       )
     }

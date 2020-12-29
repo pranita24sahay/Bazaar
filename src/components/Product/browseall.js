@@ -25,10 +25,6 @@ function BrowseALL(props) {
             </div>
             <div className="row justify-content-center">
                 {browseallproducts}
-                if(Card.onClick)
-                {
-                    <Product />
-                }
             </div>
         </div>
         )
