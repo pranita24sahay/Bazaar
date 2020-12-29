@@ -7,6 +7,7 @@ import BackDrop from './components/Navigation/Backdrop/Backdrop.js'
 
 import Body from './components/Body/body';
 
+
 import Footer from './components/Footer/footer';
 
 import { BrowserRouter} from 'react-router-dom';
@@ -55,7 +56,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
       </div>
     );
     }
-  }
+  } 
 
 
 export default App;

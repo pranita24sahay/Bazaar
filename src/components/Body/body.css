@@ -16,3 +16,7 @@
 {
     max-height: 450px;
 }
+.Card:hover{
+    background: blue; /* make this whatever you want */
+        
+}

@@ -96,3 +96,12 @@
 [1224/125358.425:ERROR:crash_report_database_win.cc(455)] unexpected header
 [1224/130858.461:ERROR:crash_report_database_win.cc(455)] unexpected header
 [1224/132358.504:ERROR:crash_report_database_win.cc(455)] unexpected header
+[1224/133857.152:ERROR:crash_report_database_win.cc(455)] unexpected header
+[1224/135357.184:ERROR:crash_report_database_win.cc(455)] unexpected header
+[1224/140029.229:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1224/140029.964:ERROR:exception_snapshot_win.cc(99)] thread ID 3532 not found in process
+[1224/233043.225:ERROR:crash_report_database_win.cc(455)] unexpected header
+[1225/122731.616:ERROR:crash_report_database_win.cc(455)] unexpected header
+[1225/193721.564:ERROR:crash_report_database_win.cc(455)] unexpected header
+[1225/222309.080:ERROR:crash_report_database_win.cc(455)] unexpected header
+[1226/132528.885:ERROR:crash_report_database_win.cc(455)] unexpected header

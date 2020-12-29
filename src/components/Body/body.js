@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-import Caraousel from '../Carousel/caraousel';
-import Collections from '../Collections/collections';
+import Collections from '../Home/Collections/collections';
 
 import Slider from './carousel';
 import Trending_for_men from './trending_men';
@@ -9,23 +8,24 @@ import Trending_for_women from './trending_women';
 
 import Clothes_arr from '../Clothes/Clothes_arr';
 import Footwear_arr from '../Footwear/Footwear_arr';
+import ITEMS from '../Home/items';
 
 import './body.css';
 
 import { Switch, Route, Redirect,withRouter  } from 'react-router-dom';
+import BrowseALL from '../Product/browseall';
+
+import {Card,CardBody,CardImg,CardTitle,CardText} from 'reactstrap';
+
+class Body extends Component { 
 
 
-
-class Body extends Component {    
-    
   render() {
     const HomePage = () => {
       return(
-            <div>
-                <Caraousel />
-                <div className="container">
-                    <div className="row"><Collections /></div>
-                </div>
+          <div>
+                <Slider arr={ITEMS}/>
+                <Collections />
           </div>
       );
     }
@@ -36,6 +36,7 @@ class Body extends Component {
                 <Slider arr={Clothes_arr} />
                 <Trending_for_men arr ={Clothes_arr} />
                 <Trending_for_women arr ={Clothes_arr} />
+                <BrowseALL arr={Clothes_arr}/>
             </div>
         )
     }
@@ -46,6 +47,7 @@ class Body extends Component {
             <Slider arr ={Footwear_arr} />
             <Trending_for_men arr ={Footwear_arr} />
             <Trending_for_women arr ={Footwear_arr} />
+            <BrowseALL arr={Footwear_arr}/>
         </div>
       )
     }
@@ -63,6 +65,14 @@ class Body extends Component {
         </div>
       )
     }
+    const ProductPage =() =>
+    {
+      return(
+        <div>
+          
+        </div>
+      )
+    }
 
     return (
         <div>
@@ -71,6 +81,7 @@ class Body extends Component {
               <Route exact path='/clothes' component={Clothespage} />
               <Route exact path='/footwear' component={FootwearPage} />
               <Route exact path='/jewellery' component={JewelleryPage} />
+              <Route exact path='/product' component={ProductPage} />
               <Redirect to="/home" />
           </Switch>
         </div>

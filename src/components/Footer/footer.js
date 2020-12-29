@@ -30,6 +30,22 @@ function Footer() {
                     Contact Us
                 </div>
             </div>
+            <div className="row justify-content-center">
+                <div className ="col-sm-5">
+                   <h4> Registered office address</h4>
+                    <p>
+                        15,Yemen Road<br />
+                        Yemen
+                    </p>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div className="col-sm-3 offset-sm-4">
+                    Terms and Conditions
+                </div>
+            </div>
+
         </div>
     </div>
     )

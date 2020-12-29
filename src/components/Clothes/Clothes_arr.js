@@ -1,6 +1,5 @@
 import overcoat from './Images/black_overcoat.webp';
 
-import dress3 from './Images/blackdress.jpg';
 import dress4 from './Images/blackdress2.webp';
 import dress1 from './Images/blackreddress.webp';
 import dress2 from './Images/burgendy dress.webp';
@@ -186,7 +185,6 @@ import saree from './Images/saree.jpg'
         {
             id: 11,
             name:'skirt2',
-            image: dress3,
             category: 'Ladies',
             label:'New arrival',
             price:'Rs. 1300',

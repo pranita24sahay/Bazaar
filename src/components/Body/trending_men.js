@@ -9,11 +9,10 @@ function trending_men(props) {
             {
                 return(
                 <div  className="col-sm-3">
-                    <Card className="style">
+                    <Card className="style" >
                         <CardImg className="style-pic" width="200px" src={cloth.image} alt={cloth.name} />
                         <CardBody className="style-body">
                             <CardHeader className="justify-content-center">{cloth.name} <CardSubtitle className="justify-content-center">{cloth.price}</CardSubtitle></CardHeader>
-
                             <CardText>{cloth.description}</CardText>
                         </CardBody>
                     </Card>
@@ -31,6 +30,7 @@ function trending_men(props) {
             <div className="row">
             {PICKS}
             </div>
+            
         </div>
     );
 }
