@@ -5,6 +5,7 @@ import Collections from '../Home/Collections/collections';
 import Slider from './carousel';
 import Trending_for_men from './trending_men';
 import Trending_for_women from './trending_women';
+import BrowseALL from './browseall';
 
 import Clothes_arr from '../Clothes/Clothes_arr';
 import Footwear_arr from '../Footwear/Footwear_arr';
@@ -13,13 +14,9 @@ import ITEMS from '../Home/items';
 import './body.css';
 
 import { Switch, Route, Redirect,withRouter  } from 'react-router-dom';
-import BrowseALL from '../Product/browseall';
-
 
 class Body extends Component { 
   
-
-
   render() {
     const HomePage = () => {
       return(

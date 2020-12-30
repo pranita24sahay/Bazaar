@@ -16,6 +16,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
   class App extends Component {
 
+    authenticate(){
+      return new Promise(resolve => setTimeout(resolve, 2000)) // 2 seconds
+    }
+    componentDidMount(){
+      this.authenticate().then(() => {
+        const ele = document.getElementById('ipl-progress-indicator')
+        if(ele){
+          // fade out
+          ele.classList.add('available')
+          setTimeout(() => {
+            // remove from DOM
+            ele.outerHTML = ''
+          }, 1000)
+        }
+      })
+    }
+
     state = {
       sidebarOpen:false
     };

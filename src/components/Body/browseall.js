@@ -35,14 +35,18 @@ class BrowseALL extends Component {
     render() {
         const browseall = this.props.arr.map((item) => {
             return (
+                <>
                 <div  className="col-sm-3">
                     <Card className="style" key={item.id} onClick={() => this.onDishSelect(item)}>
                         <CardImg className="style-pic" width="200px" height="400px" src={item.image} alt={item.name} />
                         <CardBody className="style-body">
-                            <CardHeader className="justify-content-center">{item.name} <CardSubtitle className="justify-content-center">{item.price}</CardSubtitle></CardHeader>
+                            <CardHeader className="justify-content-center"><b>{item.name}</b></CardHeader>
+                            <CardSubtitle className="justify-content-center"><em>{item.price}</em></CardSubtitle>
                         </CardBody>
                     </Card>
                 </div>
+                <br />
+                </>
             );
         });
 

@@ -2,7 +2,7 @@
 {
     border: black;
     border-radius: 20px;
-    background-color: aliceblue;    
+    background-color:whitesmoke;    
 }
 .CardBody
 {
@@ -19,4 +19,8 @@
 .Card:hover{
     background: blue; /* make this whatever you want */
         
+}
+.style-body
+{
+    align-content: center;
 }
