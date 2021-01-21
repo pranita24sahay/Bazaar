@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardBody, CardHeader, CardImg, CardSubtitle, CardText} from 'reactstrap';
 
 
+
 function trending_men(props) {
     const PICKS = props.arr.map(cloth =>
         {
@@ -18,6 +19,12 @@ function trending_men(props) {
                     </Card>
                 </div>
                 )
+            }
+            else
+            {
+              return(
+                <div></div>
+              )
             }
         })
     return (

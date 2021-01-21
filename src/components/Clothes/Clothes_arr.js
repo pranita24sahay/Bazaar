@@ -34,7 +34,9 @@ import yellow_suit from './Images/yellow_suit.jpg';
             label:'',
             price:'Rs. 1050',
             women:false,
-            description:'Peach coloured kumpsuit'
+            slide:'1',
+            description:'Peach coloured kumpsuit',
+            url:"clothes"
         },
         {
             id: 2,
@@ -44,8 +46,10 @@ import yellow_suit from './Images/yellow_suit.jpg';
             label:'Trending',
             price:'Rs. 1300',
             women:false,
+            slide:'1',
             description:'Dramatic Entrance Lantern Sleeve Wrap Dress in Plum',
-            details:'Athena presents this charming plum dress which would be an elegant choice to wear with a headpiece and gold accessories. Dramatic entrance, sorted.Designed with chic off shoulder surplice neck, self-tie bowknot at waist and statement lantern sleeves. Styled with a pencil shape that sits on the knee.'
+            details:'Athena presents this charming plum dress which would be an elegant choice to wear with a headpiece and gold accessories. Dramatic entrance, sorted.Designed with chic off shoulder surplice neck, self-tie bowknot at waist and statement lantern sleeves. Styled with a pencil shape that sits on the knee.',
+            url:"clothes"
         },
         {
             id: 3,
@@ -56,7 +60,9 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs. 12340',
             featured: false,
             men: true,
-            description:'A blazer to enhance your look'
+            slide:'1',
+            description:'A blazer to enhance your look',
+            url:"clothes"
             
         },
         {
@@ -68,8 +74,9 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs. 950',
             featured: false,
             women:false,
-            description:'An off-shoulder party wear dress'
-            
+            slide:'1',
+            description:'An off-shoulder party wear dress',
+            url:"clothes"
         },
         {
             id: 5,
@@ -80,7 +87,9 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs.2340',
             men:true,
             featured:false,
-            description:'A casual t-shirt in cool colours of green and blue'
+            slide:'2',
+            description:'A casual t-shirt in cool colours of green and blue',
+            url:"clothes"
         },
         {
             id: 6,
@@ -90,19 +99,25 @@ import yellow_suit from './Images/yellow_suit.jpg';
             label:'Trending',
             price:'Rs. 1300',
             featured: false,
-            description:'A peach-crop top'
+            slide:'2',
+            description:'A peach-crop top',
+            url:"clothes"
         },
         {
             id:7,
             name:'Athens',
             image:ladies_kurta,
-            price:'Rs. 1500'
-        },
+            price:'Rs. 1500',
+            slide:'2'
+            ,
+            url:"clothes"},
         {
             id:8,
             name:'Zara',
             image:white_suit,
-            price:'Rs. 3000'
+            price:'Rs. 3000',
+            slide:'2',
+            url:"clothes"
         },
         {
             id:9,
@@ -113,7 +128,9 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs. 1300',
             featured: true,
             women:true,
-            description:'Floral peach flare skirt '
+            description:'Floral peach flare skirt ',
+            slide:'3',
+            url:"clothes"
         } ,
         {
             id: 10,
@@ -123,7 +140,9 @@ import yellow_suit from './Images/yellow_suit.jpg';
             label:'',
             price:'Rs. 950',
             featured: true,
-            description:'A attire of perfection'
+            slide:'3',
+            description:'A attire of perfection',
+            url:"clothes"
         },
         {
             id: 11,
@@ -134,7 +153,9 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs.2340',
             featured: true,
             men: false,
-            description:'A great party wear shirt with mandarin collar'
+            slide:'3',
+            description:'A great party wear shirt with mandarin collar',
+            url:"clothes"
         },
         {
             id: 12,
@@ -144,7 +165,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             label:'New arrival',
             price:'Rs. 1300',
             featured: true,
-            description:'A hoodie to pair up with casuals '
+            description:'A hoodie to pair up with casuals ',
+            url:"clothes"
         },
         {
             id: 13,
@@ -156,7 +178,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             featured: true,
             men:false,
             women:true,
-            description:'A yellow dazzling Plazzo suit to make you stand out'                    
+            description:'A yellow dazzling Plazzo suit to make you stand out',
+            url:"clothes"                   
         },
         {
             id: 14,
@@ -167,7 +190,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs. 950',
             featured:false,
             women: true,
-            description:'A bodycon blue suit with net dupatta' 
+            description:'A bodycon blue suit with net dupatta',
+            url:"clothes"
         },
         {
             id: 15,
@@ -178,7 +202,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs.2540',
             featured: false,
             women:true,
-            description:'A fit till waist and thigh high slit red dress'
+            description:'A fit till waist and thigh high slit red dress',
+            url:"clothes"
         },
         {
             id: 16,
@@ -188,7 +213,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             category: 'Ladies',
             label:'Trending',
             price:'Rs. 2999 ',
-            women:false     
+            women:false,
+            url:"clothes"     
         },
         {
             id:17,
@@ -196,6 +222,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             image:man_hoodie,
             price:'Rs. 1280',
             description:'A white hoodie with black hood'
+            ,
+            url:"clothes"
         },
         {
             id:18,
@@ -203,7 +231,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             image:blue_tshirt,
             price:'Rs. 980',
             men:true,
-            description:'A great fit blue t-shirt'
+            description:'A great fit blue t-shirt',
+            url:"clothes"
         },
         {
             id:19,
@@ -212,7 +241,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs. 1340',
             featured:false,
             men:true,
-            description:'A gray shirt that goes with everything'
+            description:'A gray shirt that goes with everything',
+            url:"clothes"
         },
         {
             id:20,
@@ -220,7 +250,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             image:white_top,
             price:'Rs. 1432',
             featured:false,
-            description:'A white top with elbow length bow sleeves.'
+            description:'A white top with elbow length bow sleeves.',
+            url:"clothes"
         },
         {
             id:21,
@@ -228,7 +259,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             image:white_shirt,
             price:'Rs. 1320',
             featured:true,
-            description:'A formal white shirt'
+            description:'A formal white shirt',
+            url:"clothes"
         },
         {
             id:22,
@@ -236,7 +268,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             image:saree,
             price:'Rs. 1200',
             featured:true,
-            description:'a cream and black shaded saree , with intricate designs'
+            description:'a cream and black shaded saree , with intricate designs',
+            url:"clothes"
         },
         {
             id:23,
@@ -244,7 +277,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             image:floral_peach_suit,
             price:'Rs. 970',
             featured:true,
-            description:' A peach coloured fit and flare floral suit with red legging'
+            description:' A peach coloured fit and flare floral suit with red legging',
+            url:"clothes"
         },
         {
             id: 24,
@@ -255,7 +289,8 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs. 3250',
             men: false,
             featured:true,
-            description:' A formal blue suit'
+            description:' A formal blue suit',
+            url:"clothes"
         }
     ];
     export default CLOTHING_ITEMS;

@@ -20,6 +20,12 @@ function trending_women(props) {
                 </div>
                 )
             }
+            else
+            {
+              return(
+                <div></div>
+              )
+            }
         })
     return (
         <div className="container">

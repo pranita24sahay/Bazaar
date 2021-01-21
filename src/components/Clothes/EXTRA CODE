@@ -1,0 +1,203 @@
+const slide1 = props.arr.map(item =>
+        {
+            if(item.slide=='1')
+         {
+            return(
+            <div className="col-sm-2 offset-sm-1 ">
+                <Card className="style" >
+                    <CardImg className=" d-block h-30 mx-auto caro-pic" src={item.image} max-height="300px" position="absolute" />
+                    <CardBody className="style-body">
+                        <CardHeader className="justify-content-center">Name 
+                            <CardSubtitle className="justify-content-center"></CardSubtitle>
+                        </CardHeader>
+                        <CardText></CardText>
+                    </CardBody>
+                </Card>
+            </div>
+            )
+         }
+        })
+
+import black_hoodie from './Images/black_hoodie.webp';
+import white_top from './Images/white_top.jpg';
+import blackreddress from './Images/blackreddress.webp';
+import blue_blazer from './Images/blue_blazer.webp';
+import blue_pink_suit from './Images/blue_pink_suit.webp';
+import blue_tshirt from './Images/blue_tshirt.webp';
+import burgendy_dress from './Images/burgendy dress.webp';
+import floral_peach_suit from './Images/floral_peach_suit.jpg';
+import floral_peach_skirt from './Images/floral_peachskirt.webp';
+import gray_shirt from './Images/gray-shirt.webp';
+
+<CarouselItem>
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-2  ">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={blue_tshirt} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center">Name 
+                                    <CardSubtitle className="justify-content-center"></CardSubtitle>
+                                </CardHeader>
+                                <CardText>
+                                </CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className="col-sm-2 ">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={burgendy_dress} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center"> 
+                                    <CardSubtitle className="justify-content-center">Name</CardSubtitle>
+                                </CardHeader>
+                                <CardText></CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className="col-sm-2 ">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={blue_pink_suit} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center"> name
+                                    <CardSubtitle className="justify-content-center"></CardSubtitle>
+                                </CardHeader>
+                                <CardText></CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className="col-sm-2 ">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={black_hoodie} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center">Name 
+                                    <CardSubtitle className="justify-content-center"></CardSubtitle>
+                                </CardHeader>
+                                <CardText></CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className="col-sm-2 ">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={white_top} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center">Name 
+                                    <CardSubtitle className="justify-content-center"></CardSubtitle>
+                                </CardHeader>
+                                <CardText></CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className="col-sm-2 ">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={gray_shirt} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center">Name 
+                                    <CardSubtitle className="justify-content-center"></CardSubtitle>
+                                </CardHeader>
+                                <CardText></CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                </div>
+            </div>
+        </CarouselItem>
+        <CarouselItem>
+            <div className="container">
+                <div className="row">
+                    {slide2}
+                </div>
+            </div>
+        </CarouselItem>
+        <CarouselItem>
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-2 offset-sm-1 ">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={blue_tshirt} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center">Name 
+                                    <CardSubtitle className="justify-content-center"></CardSubtitle>
+                                </CardHeader>
+                                <CardText>
+                                </CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className="col-sm-2 offset-sm-1">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={burgendy_dress} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center"> 
+                                    <CardSubtitle className="justify-content-center">Name</CardSubtitle>
+                                </CardHeader>
+                                <CardText></CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className="col-sm-2 offset-sm-1">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={blue_pink_suit} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center"> 
+                                    <CardSubtitle className="justify-content-center">name</CardSubtitle>
+                                </CardHeader>
+                                <CardText></CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className="col-sm-2 offset-sm-1">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={black_hoodie} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center">Name 
+                                    <CardSubtitle className="justify-content-center"></CardSubtitle>
+                                </CardHeader>
+                                <CardText></CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                </div>
+            </div>
+        </CarouselItem>
+        <CarouselItem>
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-3 offset-sm-1">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={blackreddress} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center">Name 
+                                    <CardSubtitle className="justify-content-center"></CardSubtitle>
+                                </CardHeader>
+                                <CardText></CardText>
+                            </CardBody>
+                        </Card></div>
+                    <div className="col-sm-3 offset-sm-1">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={floral_peach_skirt} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center"> 
+                                    <CardSubtitle className="justify-content-center">Name</CardSubtitle>
+                                </CardHeader>
+                                <CardText></CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className="col-sm-3 offset-sm-1">
+                        <Card className="style" >
+                            <CardImg className=" d-block h-30 mx-auto caro-pic" src={floral_peach_suit} max-height="300px" position="absolute" />
+                            <CardBody className="style-body">
+                                <CardHeader className="justify-content-center"> 
+                                    <CardSubtitle className="justify-content-center"></CardSubtitle>
+                                </CardHeader>
+                                <CardText></CardText>
+                            </CardBody>
+                        </Card>
+                    </div>
+                </div>
+            </div>
+        </CarouselItem>
+        "homepage": "http://pranita24sahay.github.io/E-commerce",
+        "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",

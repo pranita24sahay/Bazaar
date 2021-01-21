@@ -18,6 +18,12 @@ function home() {
           </div>
         )
       }
+      else
+      {
+        return(
+          <div></div>
+        )
+      }
       })
 
     

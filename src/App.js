@@ -13,6 +13,7 @@ import Footer from './components/Footer/footer';
 import { BrowserRouter} from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import deals from './components/Home/deals';
 
   class App extends Component {
 
@@ -68,6 +69,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
           <br /><br /><br />
           <Body /> 
           <br /><br /><br />
+          <deals />
           <Footer />     
         </BrowserRouter>
       </div>
