@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, CardHeader, CardImg, CardSubtitle, CardText} from 'reactstrap';
+import ProductCard from './products_card'
 
 
 
@@ -9,14 +9,8 @@ function trending_men(props) {
             if(cloth.men)
             {
                 return(
-                <div  className="col-sm-3">
-                    <Card className="style" >
-                        <CardImg className="style-pic" width="200px" src={cloth.image} alt={cloth.name} />
-                        <CardBody className="style-body">
-                            <CardHeader className="justify-content-center">{cloth.name} <CardSubtitle className="justify-content-center">{cloth.price}</CardSubtitle></CardHeader>
-                            <CardText>{cloth.description}</CardText>
-                        </CardBody>
-                    </Card>
+                <div className="offset-sm-1">
+                    <ProductCard product={cloth} key={cloth.id} />
                 </div>
                 )
             }

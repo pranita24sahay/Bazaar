@@ -201,3 +201,4 @@ import gray_shirt from './Images/gray-shirt.webp';
         "homepage": "http://pranita24sahay.github.io/E-commerce",
         "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+

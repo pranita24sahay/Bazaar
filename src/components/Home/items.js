@@ -1,7 +1,9 @@
- import image1 from './Images/blackdress.jpg';
- import image2 from './Images/Shoes.webp';
+ import image1 from './Images/Clothes.webp';
+ import image2 from './Images/FlipFlops.jpg';
  import image3 from './Images/jewellery-2.jpg';
  import image4 from './Images/plant.webp';
+ import image5 from './Images/Kurtas.webp';
+ import image6 from './Images/Handbags.webp';
  import slideshow1 from './Images/slideshow1.webp';
  import slideshow2 from './Images/slideshow2.jpg';
  import slideshow3 from './Images/slideshow3.jpg';
@@ -68,6 +70,16 @@
             id:7,
             image:slideshow1,
             featured:true
+        },
+        {
+            id:8,
+            image:image5,
+            collection:true
+        },
+        {
+            id:9,
+            image:image6,
+            collection:true
         }
     ];
     export default ITEMS;

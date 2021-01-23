@@ -13,7 +13,6 @@ import Footer from './components/Footer/footer';
 import { BrowserRouter} from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import deals from './components/Home/deals';
 
   class App extends Component {
 
@@ -59,7 +58,7 @@ import deals from './components/Home/deals';
         backdrop = <BackDrop click={this.backdropClickHandler}/>;
       }
     return (
-      <div>
+      <div className="App">
         <BrowserRouter>
           <div style={{height:'100%'}}>
             <Toolbar  sidebarClickHandler ={this.sidebarToggleClickHandler}/>

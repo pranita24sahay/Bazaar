@@ -1,44 +1,56 @@
-import React from 'react'
-import { Card, CardBody, CardImg} from 'reactstrap';
+import React,{useState} from 'react'
+import { Card, CardImg} from 'reactstrap';
 import './collection.css';
+//import ITEMS from '../items';
 
-import ITEMS from '../items'
-function home() {
-    const cardList=ITEMS.map(item =>
-      {
+function SmallCard({value}) {
+  return(
+    <div  className="col-sm-2">
+      <Card className="style">
+        <CardImg className="pic-style" width="450px" height="320px" src={value.image} alt={value.name} />
+      </Card>
+      <br />
+    </div>
+  );
+}
+function LargeCard({value}) {
+  return(
+    <div  className="col-sm-3">
+      <Card className="style">
+        <CardImg className="pic-style" width="450px" height="320px" src={value.image} alt={value.name} />
+      </Card>
+      <br />
+    </div>
+  );
+}
+
+  const Collection = (props) => {
+    const[doit,handleDoIt]=useState(false);
+    const cardList=props.arr.map(item =>
+    {
       if(item.collection)
-      {
+      {   
         return (
-          <div  className="col-sm-3">
-            <Card className="style">
-              <CardImg className="pic-style" width="450px" height="320px" src={item.image} alt={item.name} />
-              <CardBody><h5>{item.description}</h5></CardBody>
-            </Card>
-            <br />
-          </div>
+          <>
+          { doit ? <LargeCard value={item} /> : <SmallCard value={item} />}
+          </>
         )
       }
-      else
-      {
-        return(
-          <div></div>
-        )
-      }
-      })
-
-    
+    })
+  
     return (
-    <div className="container">
+      <>
       <div className="row justify-content-center">
         <br />
         <h1>Our Collections</h1>
         <br /><br />
       </div>
+      <div onMouseEnter={() => handleDoIt(true)} onMouseLeave ={() => handleDoIt(false)} >yisgducuysd</div>
       <div className="row justify-content-center">
         {cardList}
       </div>
-    </div>
+      </>
     );
 }
 
-export default home;
+export default Collection;

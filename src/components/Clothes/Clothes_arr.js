@@ -31,7 +31,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             name:'Harpa',
             image: jumpsuit,
             category: 'Ladies',
-            label:'',
+            label:'Hot',
             price:'Rs. 1050',
             women:false,
             slide:'1',
@@ -173,7 +173,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             name:'Zara',
             image: yellow_suit,
             category: 'women',
-            label:'',
+            label:'New',
             price:'Rs. 4250',
             featured: true,
             men:false,
@@ -211,7 +211,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             description:' Women Black Solid Longline Double-Breasted Overcoat',
             image: overcoat,
             category: 'Ladies',
-            label:'Trending',
+            label:'',
             price:'Rs. 2999 ',
             women:false,
             url:"clothes"     
@@ -230,6 +230,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             name:'INVICTIUS',
             image:blue_tshirt,
             price:'Rs. 980',
+            label:'Hot',
             men:true,
             description:'A great fit blue t-shirt',
             url:"clothes"
@@ -250,6 +251,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             image:white_top,
             price:'Rs. 1432',
             featured:false,
+            label:'New',
             description:'A white top with elbow length bow sleeves.',
             url:"clothes"
         },
@@ -259,6 +261,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             image:white_shirt,
             price:'Rs. 1320',
             featured:true,
+            label:'trending',
             description:'A formal white shirt',
             url:"clothes"
         },

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardImg,CardBody,CardText,CardTitle } from 'reactstrap';
-import BrowseALL from '../Body/browseall';
+//import BrowseALL from '../Body/browseall';
 import black_hoodie from './Images/black_hoodie.webp';
 class CardSample extends Component {
     constructor(props) {

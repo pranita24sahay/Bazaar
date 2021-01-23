@@ -9,7 +9,7 @@ function slider(props) {
       {
         return(
           <CarouselItem>
-            <img  className="d-block h-30 mx-auto caro-pic" src={shoe.image}   max-height="400px" position="absolute"/>
+            <img  className="d-block h-30 mx-auto caro-pic" src={shoe.image} alt={shoe.description} max-height="400px" position="absolute"/>
           </CarouselItem>
         )
       }
@@ -17,7 +17,7 @@ function slider(props) {
     )
     return (
       <div>
-        <Carousel datatype="carousel" height="500px" >
+        <Carousel datatype="carousel" height="500px" className="caro-style">
           {carList}
         </Carousel>
       </div>

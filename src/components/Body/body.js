@@ -6,7 +6,7 @@ import Slider from './ImageSlider';
 import TrendingForMen from './trending_men';
 import TrendingForWomen from './trending_women';
 import BrowseALL from './browseall';
-import CardSample from '../Clothes/CardSample';
+//import CardSample from '../Clothes/CardSample';
 import ProductDetail from './ProductDetail';
 
 
@@ -17,7 +17,6 @@ import ITEMS from '../Home/items';
 import './body.css';
 
 import { Switch, Route, Redirect,withRouter  } from 'react-router-dom';
-import Deals from '../Home/deals';
 
 class Body extends Component { 
   
@@ -26,8 +25,7 @@ class Body extends Component {
       return(
           <div>
                 <Slider arr={ITEMS}/>
-                <Collections />
-                <Deals />
+                <Collections arr={ITEMS} />
           </div>
       );
     }
@@ -36,7 +34,6 @@ class Body extends Component {
         return(
             <div>
                 <Slider arr={Clothes_arr} />
-                <CardSample />
                 <TrendingForMen arr ={Clothes_arr} />
                 <TrendingForWomen arr ={Clothes_arr} />
                 <BrowseALL arr={Clothes_arr}/>
@@ -96,4 +93,4 @@ class Body extends Component {
   }
 }
 
-export default withRouter((Body));
+export default withRouter(Body);

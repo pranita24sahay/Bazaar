@@ -1,18 +1,29 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody,
-    CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import {Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
-function RenderCard({item}) {
+function RenderImage({item}) {
     if (item!=null){
         return(
-            <Card className="col-12 col-md-5 m-1">
-                <CardImg top src={item.image} alt={item.name} />
-                <CardBody>
-                    <CardTitle><strong>{item.name}</strong></CardTitle>
-                    <CardText>{item.description}</CardText>
-                </CardBody>
-            </Card>  
+            <div className="row justify-content-center ">
+                <div className="col-sm-6 ">
+                    <img src={item.image} width="80%" alt={item.description}/>
+                </div>
+                <div className="col-sm-6 detail" >
+
+                    <h1>{item.name}</h1>
+                    <h3>{item.description}</h3>
+                    <h5>{item.price}</h5>
+                    <br /><br /><br /><br /><br /><br /><br /><br />
+                    <div className="row">
+                        <ol>
+                            <li><Button>Add to Cart</Button></li>
+                            <li><Button>Wishlist</Button></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>  
         );
     } else {
         return(
@@ -20,6 +31,7 @@ function RenderCard({item}) {
         );
     }
 }
+
 
 
 const ProductDetail = (props) => {
@@ -31,14 +43,10 @@ const ProductDetail = (props) => {
                         <BreadcrumbItem><Link to="/clothes">Clothes</Link></BreadcrumbItem>
                         <BreadcrumbItem active>{props.item.name}</BreadcrumbItem>
                     </Breadcrumb>
-                    <div className="col-12">
-                        <h3>{props.item.name}</h3>
-                        <hr />
-                    </div>                
                 </div>
-                <div className="row">
-                    <RenderCard item={props.item} />
-                </div>
+                    <div className="col-sm-12">
+                        <RenderImage item={props.item} />
+                    </div>
             </div>
         );
     } else {
