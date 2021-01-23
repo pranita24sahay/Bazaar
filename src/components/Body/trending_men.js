@@ -9,7 +9,7 @@ function trending_men(props) {
             if(cloth.men)
             {
                 return(
-                <div className="offset-sm-1">
+                <div >
                     <ProductCard product={cloth} key={cloth.id} />
                 </div>
                 )
@@ -28,10 +28,11 @@ function trending_men(props) {
                 <h1> Trending in men </h1>
             </div>
             <br />
-            <div className="row">
-            {PICKS}
+            <div className="container alignment">
+                <div className="row">
+                    {PICKS}
+                </div>
             </div>
-            
         </div>
     );
 }

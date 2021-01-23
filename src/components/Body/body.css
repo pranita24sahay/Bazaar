@@ -1,42 +1,41 @@
-.style
-{
-    border: black;
-    border-radius: 20px;
-    background-color:rgba(245, 245, 245, 0.911);    
-    
-}
-.give-padding
-{
-  padding-top: 15px;
-  padding-bottom: 15px;
-  
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07),
-  0 5px 4px 0 rgba(50, 50, 93, 0.01);
-}
+/*Image Slider */
 .caro-style
 {
   background-color: white;
-}
-.CardBody
-{
-    justify-content: center;
-}
-.style-pic
-{
-    border-color: black;
 }
 .caro-pic
 {
     max-height: 330px;
 }
-.Card:hover{
-    background: blue; /* make this whatever you want */
-        
+/*Browse all */
+.give-padding
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: right;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07),
+  0 5px 4px 0 rgba(50, 50, 93, 0.01);
+}
+.style
+{
+  border-radius: 20px;
+  background-color:rgba(245, 245, 245, 0.911);
+}
+.style-pic
+{
+  border-radius: 20px;
+  height: 300px;
 }
 .style-body
 {
-    align-content: center;
+  text-align: center;
 }
+/*trending*/
+.alignment
+{
+  padding-left: 55px;
+}
+/*product-detail*/
 .detail
 {
     justify-content: center;
@@ -47,13 +46,14 @@
 {
     list-style: none;
 }
+/*product-card*/
 figure {
-    width: 300px;
+    width: 250px;
+    height: 340px;
   }
-  
-  figure:hover img {
+figure:hover img {
     opacity: 1;
-  }
+}
   .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -62,9 +62,9 @@ figure {
     margin: 0 auto;
   }
   .product-card {
-    width: 300px;
+    width: 250px;
     height: auto;
-    margin: 10px auto 10px auto;
+    margin: 10px 15px 10px auto;
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.07),
       0 15px 4px 0 rgba(50, 50, 93, 0.01);
     position: relative;
@@ -111,9 +111,6 @@ figure {
     flex-flow: column;
     justify-content: center;
     position: relative;
-  }
-  .fa{
-    font-size: large;
   }
   .favorite,
   .favorite-border {

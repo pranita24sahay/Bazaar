@@ -2,19 +2,29 @@ import black_highheel from './Images/black_highheel.webp';
 import Blackshoes from './Images/Blackshoes.webp';
 import blue_shoes from './Images/blue_shoes.webp';
 import crocs_flipflops from './Images/crocs_flipflops.webp';
-import formal_shoes from './Images/formal_shoes.webp';
+import formal_shoes_1 from './Images/formal_shoes_1.webp';
+import formal_shoes_2 from './Images/formal_shoes_2.webp';
 import flipflops from './Images/flipflops.webp'
 import glitter_heel from './Images/glitter_heel.jpg';
+import glitter_heel_2 from './Images/glitter_heel_2.jpg';
 import juti_Hop from './Images/juti_HOP.webp';
+import hop_2 from './Images/hop_2.jpg';
 import peach_heel from './Images/peach heel.jpg';
 import sneakers from './Images/sneakers.webp';
+import black_men_sports_shoes_1 from './Images/black_men_sports_shoes_1.jpg';
+import black_men_sports_shoes_2 from './Images/black_men_sports_shoes_2.jpg';
 import white_sports_shoes from './Images/white_sports_shoes.webp';
 import blue_heel from './Images/blue_heel.webp';
 import multi_coloured from './Images/multi_coloured.webp';
 import multi_flat from './Images/multi_flat.webp';
+import multi_flat_2 from './Images/multi_flat_2.webp'
 import pink_heel from './Images/pink_heel.jpg';
 import teal from './Images/teal.jpg';
-
+import teal_2 from './Images/teal_2.jpg';
+import men_brown_sneakers_1 from './Images/men_brown_sneakers_1.webp';
+import men_brown_sneakers_2 from './Images/men_brown_sneakers_2.webp';
+import men_blue_shoes_1 from './Images/men_blue_shoes_1.webp';
+import men_blue_shoes_2 from './Images/men_blue_shoes_2.jpg';
 
  const FOOTWEAR_ITEMS=
     [
@@ -34,8 +44,10 @@ import teal from './Images/teal.jpg';
         {
             id:1,
             image:glitter_heel,
+            image2:glitter_heel_2,
             name:'Truffle collection',
-            title: "OFF-WHITE5",
+            title: "dolce and gabbana",
+            women:true,
             sale_price: 1100,
             price: 1400,
             label:'',
@@ -102,16 +114,17 @@ import teal from './Images/teal.jpg';
         },
         {
             id:7,
-            image:formal_shoes,
-            image2:sneakers,
+            image:formal_shoes_1,
+            image2:formal_shoes_2,
             name:"Shoetopia",
+            title:"Shoes",
             sale_price: 1100,
             price: 1400,
-            label:'',
-            description:'Women Sale pink-Coloured Solid Suede Heels',
+            description:'Men formal shoes',
             featured:false,
             men:true,
-            url:"footwear"
+            url:"footwear",
+            unavailable_size: [8, 13]
         },
         {
             id:8,
@@ -124,27 +137,48 @@ import teal from './Images/teal.jpg';
             
         },
         {
+            title: "OFF-WHITE5",
+            description: "Off-Court 3.0 high-top sneakers",
+            sale: true,
+            new_arrival: false,
+            sale_price: 1100,
+            price: 1400,
+            men:true,
+            image: men_brown_sneakers_1,
+            image2:men_brown_sneakers_2,
+            unavailable_size: [8, 13],
+          },
+        {
             id:9,
-            image:white_sports_shoes,
-            image2:sneakers,
+            image:black_men_sports_shoes_1,
+            image2:black_men_sports_shoes_2,
             name:"Shoetopia",
+            title:"Men's Shoes",
             sale_price:'1234',
             price:'2345',
             label:'Sale',
             description:'Women Sale pink-Coloured Solid Suede Heels',
             featured:false,
-            url:"footwear"
+            men:true,
+            url:"footwear",
+            unavailable_size: [8, 13],
         },
         
         {
             id:11,
             image:teal,
+            image2:teal_2,
             name:"Shoetopia",
+            title:"Rolci",
             label:'Recommended',
             description:'Women Sale pink-Coloured Solid Suede Heels',
             featured:true,
+            sale:true,
+            sale_price: 1100,
+            price: 1400,
+            women:true,
             url:"footwear",
-            men:false
+            unavailable_size: [8],
             
         },
         {
@@ -165,7 +199,7 @@ import teal from './Images/teal.jpg';
             description:'Women Sale pink-Coloured Solid Suede Heels',
             featured:true,
             url:"footwear",
-            women:true
+            women:false
         },
         {
             id:14,
@@ -173,17 +207,22 @@ import teal from './Images/teal.jpg';
             name:"Shoetopia",
             description:'Women Sale pink-Coloured Solid Suede Heels',
             featured:false,
-            women:true,
+            women:false,
             url:"footwear"
         },
         {
             id:15,
             image:multi_flat,
+            image2:multi_flat_2,
+            title:"metro",
             name:"Shoetopia",
             label:'New',
+            sale_price: 1100,
+            price: 1400,
             description:'Women Sale pink-Coloured Solid Suede Heels',
             featured:true,
-            women:false,
+            women:true,
+            unavailable_size: [13],
             url:"footwear"
         },
         {
@@ -194,15 +233,20 @@ import teal from './Images/teal.jpg';
             description:'Women Sale pink-Coloured Solid Suede Heels',
             featured:false,
             url:"footwear",
-            women:true
+            women:false
         },
         {
             id:17,
+            title:"House Of Pataudi",
             image:juti_Hop,
+            image2:hop_2,
+            sale_price: 1128,
+            price: 1528,
             name:"Shoetopia",
             description:'Women Sale pink-Coloured Solid Suede Heels',
             featured:false,
             url:"footwear",
+            unavailable_size: [13],
             women:true
         },
         {
@@ -212,58 +256,9 @@ import teal from './Images/teal.jpg';
             new_arrival: true,
             sale_price: 1128,
             price: 1528,
-            image: "https://i.ibb.co/RvcgnN9/off-white-1.jpg",
-        
-            image2: "https://i.ibb.co/XX2RHFP/off-white-2.jpg",
-            unavailable_size: [8, 13],
-          },
-          {
-            title: "OFF-WHITE2",
-            description: "Off-Court 3.0 high-top sneakers",
-            sale: false,
-            new_arrival: false,
-            sale_price: 1528,
-            price: 1528,
-            image: "https://i.ibb.co/RvcgnN9/off-white-1.jpg",
-        
-            image2: "https://i.ibb.co/XX2RHFP/off-white-2.jpg",
-            unavailable_size: [10, 12],
-          },
-          {
-            title: "OFF-WHITE3",
-            description: "Off-Court 3.0 high-top sneakers",
-            sale: false,
-            new_arrival: true,
-            sale_price: "",
-            price: 1528,
-            image: "https://i.ibb.co/RvcgnN9/off-white-1.jpg",
-        
-            image2: "https://i.ibb.co/XX2RHFP/off-white-2.jpg",
-            unavailable_size: [7, 8, 9],
-          },
-          {
-            title: "OFF-WHITE4",
-            description: "Off-Court 3.0 high-top sneakers",
-            sale: true,
-            new_arrival: false,
-            sale_price: 1100,
-            price: 1400,
-            image: "https://i.ibb.co/RvcgnN9/off-white-1.jpg",
-        
-            image2: "https://i.ibb.co/XX2RHFP/off-white-2.jpg",
-            unavailable_size: [8, 13],
-          },
-            {
-            title: "OFF-WHITE5",
-            description: "Off-Court 3.0 high-top sneakers",
-            sale: true,
-            new_arrival: false,
-            sale_price: 1100,
-            price: 1400,
+            image: men_blue_shoes_1,
             men:true,
-            image: "https://i.ibb.co/RvcgnN9/off-white-1.jpg",
-        
-            image2: "https://i.ibb.co/XX2RHFP/off-white-2.jpg",
+            image2:men_blue_shoes_2,
             unavailable_size: [8, 13],
           }
         

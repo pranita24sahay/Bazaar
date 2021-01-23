@@ -20,8 +20,9 @@ class BrowseALL extends Component {
                             <Badge  variant="warning"></Badge></h3>
                         </CardImgOverlay>
                         <CardBody className="style-body">
-                            <CardHeader className="justify-content-center"><b>{item.name}</b></CardHeader> 
-                            <CardSubtitle className="justify-content-center"><em>{item.price}</em></CardSubtitle>
+                            <CardHeader ><b>{item.name}</b>
+                            <CardSubtitle ><em>{item.price}</em></CardSubtitle></CardHeader> 
+                            
                         </CardBody>
                     </Link>
                     </Card>
