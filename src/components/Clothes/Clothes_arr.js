@@ -56,6 +56,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs. 1300',
             women:true,
             slide:'1',
+            unavailable_size: [13],
             description:'Dramatic Entrance Lantern Sleeve Wrap Dress in Plum',
             details:'Athena presents this charming plum dress which would be an elegant choice to wear with a headpiece and gold accessories. Dramatic entrance, sorted.Designed with chic off shoulder surplice neck, self-tie bowknot at waist and statement lantern sleeves. Styled with a pencil shape that sits on the knee.',
             url:"clothes"
@@ -71,9 +72,9 @@ import yellow_suit from './Images/yellow_suit.jpg';
             featured: false,
             men: true,
             slide:'1',
+            unavailable_size: [13],
             description:'A blazer to enhance your look',
             url:"clothes"
-            
         },
         {
             id: 4,
@@ -99,6 +100,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             men:true,
             featured:false,
             slide:'2',
+            unavailable_size: [13],
             description:'A casual t-shirt in cool colours of green and blue',
             url:"clothes"
         },
@@ -122,6 +124,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs. 1500',
             slide:'2',
             women:true,
+            unavailable_size: [13],
             url:"clothes"},
         {
             id:8,
@@ -199,6 +202,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             label:'',
             price:'Rs. 950',
             featured:false,
+            unavailable_size: [13],
             women: true,
             description:'A bodycon blue suit with net dupatta',
             url:"clothes"
@@ -212,6 +216,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             label:'New',
             price:'Rs.2540',
             featured: false,
+            unavailable_size: [13],
             women:true,
             description:'A fit till waist and thigh high slit red dress',
             url:"clothes"
@@ -244,6 +249,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs. 980',
             label:'Hot',
             men:true,
+            unavailable_size: [13],
             description:'A great fit blue t-shirt',
             url:"clothes"
         },
@@ -255,6 +261,7 @@ import yellow_suit from './Images/yellow_suit.jpg';
             price:'Rs. 1340',
             featured:false,
             men:true,
+            unavailable_size: [13],
             description:'A gray shirt that goes with everything',
             url:"clothes"
         },
