@@ -1,5 +1,4 @@
 {
-  "homepage": "http://pranita24sahay.github.io/E-commerce",
   "name": "e-commerce",
   "version": "0.1.0",
   "private": true,
@@ -23,6 +22,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
